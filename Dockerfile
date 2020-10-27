@@ -7,7 +7,6 @@ EXPOSE 17
 
 WORKDIR /go/src/app
 
-COPY cmd.go .
-COPY README.md .
+COPY . .
 
 RUN go install -v ./...
